@@ -4,11 +4,15 @@ class AppIconButton extends StatelessWidget {
   final icon;
   final method;
 
-  AppIconButton({Key key, this.icon, this.method}) : super(key: key);
+  AppIconButton({
+    Key key,
+    this.icon,
+    this.method,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) => new IconButton(
-        icon: Icon(this.icon),
+        icon: this.icon,
         onPressed: this.method,
       );
 }

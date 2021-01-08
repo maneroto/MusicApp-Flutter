@@ -16,10 +16,5 @@ const secondaryAccentA = const Color(0x2044633C); //  Dark Blue 60%
 
 /**
  * Atoms to be created:
- * Heading @Ernek
- * Text @Mane
- * Icon @Ernek
  * Button @Mane
- * IconButton @Ernek
- * Image @Mane
  */
