@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../../utils/textStyle.dart' as ts;
 
 class AppHeading extends StatelessWidget {
-  final text;
-  final align;
-  final type;
+  final String text;
+  final TextAlign align;
+  final String type;
   static const _styleMap = {
     "h1": ts.styleH1,
     "h2": ts.styleH2,
@@ -12,8 +12,8 @@ class AppHeading extends StatelessWidget {
 
   AppHeading({
     Key key,
-    this.text,
-    this.align,
+    @required this.text,
+    this.align = TextAlign.left,
     this.type = "h1",
   }) : super(key: key);
 

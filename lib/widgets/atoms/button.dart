@@ -7,8 +7,8 @@ class AppButton extends StatelessWidget {
 
   AppButton({
     Key key,
-    this.text,
-    this.method,
+    @required this.text,
+    @required this.method,
   }) : super(key: key);
 
   @override

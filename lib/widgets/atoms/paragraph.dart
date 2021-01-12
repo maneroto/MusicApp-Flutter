@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../../utils/textStyle.dart' as ts;
 
 class AppParagraph extends StatelessWidget {
-  final text;
-  final align;
-  final type;
+  final String text;
+  final TextAlign align;
+  final String type;
   static const _styleMap = {
     "normal": ts.styleText,
     "small": ts.styleTextSmall,
@@ -12,8 +12,8 @@ class AppParagraph extends StatelessWidget {
 
   AppParagraph({
     Key key,
-    this.text,
-    this.align,
+    @required this.text,
+    this.align = TextAlign.left,
     this.type = "normal",
   }) : super(key: key);
 

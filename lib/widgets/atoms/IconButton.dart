@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AppIconButton extends StatelessWidget {
-  final icon;
+  final Icon icon;
   final method;
 
   AppIconButton({
     Key key,
-    this.icon,
-    this.method,
+    @required this.icon,
+    @required this.method,
   }) : super(key: key);
 
   @override

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class AppImage extends StatelessWidget {
-  final url;
-  final align;
-  final fit;
-  final width;
-  final height;
+  final String url;
+  final Alignment alignment;
+  final BoxFit fit;
+  final double width;
+  final double height;
 
   AppImage({
     Key key,
-    this.url,
-    this.align,
+    @required this.url,
+    this.alignment = Alignment.center,
     this.fit = BoxFit.contain,
     this.width,
     this.height,
@@ -19,7 +19,7 @@ class AppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => new Image(
         image: AssetImage(this.url),
-        alignment: this.align,
+        alignment: this.alignment,
         fit: this.fit,
         width: this.width,
         height: this.height,

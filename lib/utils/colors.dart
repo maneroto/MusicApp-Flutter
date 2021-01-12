@@ -13,8 +13,3 @@ const secondaryAccent = const Color(0x204463); //  Dark Blue
 
 const primaryAccentA = const Color(0x2A264E3C); // Dark Purple 60%
 const secondaryAccentA = const Color(0x2044633C); //  Dark Blue 60%
-
-/**
- * Atoms to be created:
- * Button @Mane
- */
