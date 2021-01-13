@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../../utils/textStyle.dart' as ts;
+import '../../utils/textStyle.dart' as appTextStyle;
 
 class AppHeading extends StatelessWidget {
   final String text;
   final TextAlign align;
   final String type;
   static const _styleMap = {
-    "h1": ts.styleH1,
-    "h2": ts.styleH2,
+    "h1": appTextStyle.styleH1,
+    "h2": appTextStyle.styleH2,
   };
 
   AppHeading({

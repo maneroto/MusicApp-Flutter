@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../../utils/textStyle.dart' as ts;
+import '../../utils/textStyle.dart' as appTextStyle;
 
 class AppParagraph extends StatelessWidget {
   final String text;
   final TextAlign align;
   final String type;
   static const _styleMap = {
-    "normal": ts.styleText,
-    "small": ts.styleTextSmall,
+    "normal": appTextStyle.styleText,
+    "small": appTextStyle.styleTextSmall,
   };
 
   AppParagraph({
