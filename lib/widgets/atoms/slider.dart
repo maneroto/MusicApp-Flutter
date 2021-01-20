@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
 
-class AppSlider extends StatefulWidget {
+class AppProgressBar extends StatefulWidget {
   final double initValue;
   final double maxValue;
 
-/**
+/* Create a Slider for progress of the song 
  * @param {double} initValue -> start second of the song (part of it)
  * @param {double} maxValue -> max seconds of the song
+ * 
+ * @returns {Widget} returns a StateFul Slider 
  */
-  AppSlider({
+  AppProgressBar({
     Key key,
     @required this.initValue,
     @required this.maxValue,
   }) : super(key: key);
 
   @override
-  _AppSliderState createState() => _AppSliderState();
+  _AppProgressBarState createState() => _AppProgressBarState();
 }
 
-class _AppSliderState extends State<AppSlider> {
+class _AppProgressBarState extends State<AppProgressBar> {
   double _currentSliderValue = 0;
   @override
   Widget build(BuildContext context) {
